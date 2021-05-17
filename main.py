@@ -6,7 +6,7 @@ def input_number(text, min, max):
         if num >= min and num <= max:
             return num
         else:
-            print("Некорректное число, попробуйте снова")
+            print("Не принимаю меньше", min, "и больше", max)
             return input_number(text, min, max)
     except ValueError:
         print("Вы точно вводите число? Попробуйте снова.")
